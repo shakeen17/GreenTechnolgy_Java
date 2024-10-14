@@ -1,0 +1,71 @@
+package tasks;
+
+import java.util.Scanner;
+
+public class Order {
+public static int[] Ascending(int[] arr) {
+	for(int i = 0; i < arr.length - 1; i++) {
+		for(int j = i + 1; j < arr.length; j++) {
+			if(arr[i] > arr[j]) {
+				int temp = arr[i];
+				arr[i] = arr[j];
+				arr[j] = temp;
+			}
+		}
+	}
+	return arr;
+}
+public static int[] reverse(int[] arr) {
+	Ascending(arr);
+	int start = 0, end = arr.length - 1;
+	while(start < end) {
+		int temp = arr[start];
+		arr[start] = arr[end];
+		arr[end] = temp;
+	}
+	return arr;
+}
+public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Enter no of Elements:");
+	int n = sc.nextInt();
+	System.out.println("Enter the Elements:");
+	int[] arr = new int[n];
+	for(int i = 0; i < n; i++) {
+		arr[i] = sc.nextInt();
+	}
+	int choice = sc.nextInt();
+	System.out.println("Enter your choice: \n 1.Show all Elements in Ascending Order \n 2.Select Element From Ascending Order Array \n 3.Select First and Last No in Ascending Order Array \n 4.Show all Elements in Decending Order \n 5.Select Element From Decending Order Array \n 6.Select First and Last No in Decending Order Array");
+	switch(choice) {
+	case 1:
+		System.out.println("Elements In ascending Order.......");
+		Ascending(arr);
+		for(int i: arr) {
+			System.out.println(i + " ");
+		}
+	case 2:
+		System.out.println("Enter the Index.......");
+		int index = sc.nextInt();
+		Ascending(arr);
+		System.out.println("The Element is " + arr[index]);
+	case 3:
+		Ascending(arr);
+		System.out.println("The First and Last Nos are......." + arr[0] + " and " + arr[arr.length - 1]);
+	case 4:
+		System.out.println("Elements In ascending Order.......");
+		reverse(arr);
+		for(int i: arr) {
+			System.out.println(i + " ");
+		}
+	case 5:
+		System.out.println("Enter the Index.......");
+		 index = sc.nextInt();
+		reverse(arr);
+		System.out.println("The Element is " + arr[index]);
+	case 6:
+		reverse(arr);
+		System.out.println("The First and Last Nos are......." + arr[0] + " and " + arr[arr.length - 1]);
+}
+	}
+	
+}

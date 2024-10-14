@@ -1,0 +1,14 @@
+package tasks;
+
+public class ReverseString {
+public static void main(String[] args) {
+	String str = "Welcome to class of Programming";
+	String[] strArr = str.split(" ");
+	System.out.println(strArr);
+	String rev = "";
+	for(int i = 0; i < str.length(); i++) {
+		String str1 = "";
+		
+	}
+}
+}

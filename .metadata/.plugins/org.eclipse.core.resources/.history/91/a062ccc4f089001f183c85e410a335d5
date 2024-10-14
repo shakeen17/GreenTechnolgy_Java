@@ -1,0 +1,7 @@
+package testjava1;
+
+public class Diamond {
+public static void main(String[] args) {
+	
+}
+}

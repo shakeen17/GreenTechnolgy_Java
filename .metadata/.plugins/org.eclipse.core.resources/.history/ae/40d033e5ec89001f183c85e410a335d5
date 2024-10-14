@@ -1,0 +1,7 @@
+package testjava1;
+import java.util.*;
+public class HighestLowestNo {
+public static void main(String[] args) {
+	
+}
+}

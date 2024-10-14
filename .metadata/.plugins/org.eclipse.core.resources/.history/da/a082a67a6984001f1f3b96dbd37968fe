@@ -1,0 +1,20 @@
+package sampleprograms;
+import java.util.*;
+public class CollectionsLearning {
+ public static void main(String[] args) {
+	List<Object> obj1 = new ArrayList();
+	
+	obj1.add("Pink");
+	obj1.add(11);
+	obj1.add(10.9);
+	obj1.add('R');
+	obj1.add(true);
+	System.out.println(obj1);
+	
+	List<String> obj2 = new ArrayList<>();
+	obj2.add("sam");
+	obj2.add("sanjay");
+	System.out.println(obj2);
+	
+}
+}
