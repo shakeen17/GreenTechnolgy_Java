@@ -1,0 +1,28 @@
+package sampleprograms;
+
+public class LearnFuctions {
+	static void addNos(int a, int b) {
+		System.out.println("add: " + a + b);
+	}
+	static void subNos(int a, int b) {
+		System.out.println(a - b);
+	}
+	static void mulNos(int a, int b) {
+		System.out.println(a * b);
+	}
+	static void divNos(int a, int b) {
+		System.out.println(a / b);
+	}
+	static void modNos(int a, int b) {
+		System.out.println(a % b);
+	}
+public static void main(String[] args) {
+	int a = 5;
+	int b = 2;
+	addNos(a,b);
+	subNos(a,b);
+	mulNos(a,b);
+	divNos(a,b);
+	modNos(a,b);
+}
+}

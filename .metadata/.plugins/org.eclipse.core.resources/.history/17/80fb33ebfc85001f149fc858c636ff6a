@@ -1,9 +1,0 @@
-package sampleprograms;
-
-public class Exception {
-public static void main(String[] args) {
-	int a = 10 / 0;
-	String name = null;
-	System.out.println(a + name);
-}
-}
